@@ -1,3 +1,9 @@
+# My rules
+data/*.csv
+result/*.png
+animation.gif
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
