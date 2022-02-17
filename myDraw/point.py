@@ -15,7 +15,7 @@ def draw(geo, spei, image: Image.Image):
         y + variables.RECT_HEIGHT,
     ]
 
-    rgb = myDraw.colorFromSpei.get(spei)
+    r, g, b = myDraw.colorFromSpei.get(spei)
 
     draw = ImageDraw.Draw(image)
-    draw.rectangle(shape, fill=rgb)
+    draw.rectangle(shape, fill=(r, g, b, variables.RECT_OPACITY))

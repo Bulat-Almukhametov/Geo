@@ -3,6 +3,7 @@ from typing import Sequence
 
 import myDraw.image
 import myDraw.title
+import myDraw.palette
 import myFiles.images
 import myFiles.csv
 
@@ -16,6 +17,7 @@ for file_name in csv_files:
 
     target_image = myDraw.image.drawPointsLayer(template_image, points)
     target_image = myDraw.title.draw(file_name, target_image)
+    target_image = myDraw.palette.draw(target_image)
 
     myFiles.images.save(file_name, target_image)
     images.append(target_image)
